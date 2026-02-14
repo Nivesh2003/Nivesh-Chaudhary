@@ -1,10 +1,19 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Button from './Button'
 import './Navbar.css'
 import {Menu, X} from 'lucide-react'
 
 const Navbar = () => {
     const [mobileMenuOpen, setmobileMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(()=>{
+        const handleScroll = () => {
+            setScrolled(window.scrollY>50);
+        }
+        window.addEventListener("scroll",handleScroll);
+        return () => window.removeEventListener("scroll",handleScroll);
+    },[])
    const navItems = [
         {label:"About",href:"#"},
         {label:"Experience",href:""},
@@ -12,7 +21,7 @@ const Navbar = () => {
         {label:"Projects",href:""},
     ]
   return (
-    <header className="fixed top-0 left-0 right-0 bg-primary/20 md:bg-transparent z-50">
+    <header className={`fixed top-0 left-0 right-0 transistion-all duration-500 ${scrolled?"glass":" bg-transparent py-1"} z-50`}>
         <nav className="container mx-auto px-6 flex items-center justify-between">
 
             {/* Logo  */}

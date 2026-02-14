@@ -1,5 +1,6 @@
-import { Download, Github, Linkedin, Mail, SmileIcon } from "lucide-react"
+import { ChevronDown, Download, Github, Linkedin, Mail, SmileIcon } from "lucide-react"
 import Button from "../components/Button"
+import SkillsList from "../components/SkillsList"
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -71,13 +72,40 @@ const Hero = () => {
                 <div className="relative animate-fade-in animation-delay-100">
                     {/* Profile image */}
                     <div className="relative max-w-md mx-auto">
+                        <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse"/>
+
                         <div className="relative glass rounded-3xl p-2 glow-border">
                             <img src="/selfie.png" className="w-full aspect-4/5 object-cover rounded-2xl" alt="Nivesh Chaudhary" />
-                        </div>
-                    </div>
-                </div>
+                            {/* Floaters */}
+                            <div className="absolute -bottom-4 -right-4 rounded-xl glass backdrop-blur-sm px-4 py-3 animate-float">
+                                <div className="flex items-center gap-3"> 
+                                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/>
+                                    <span className="text-sm font-medium">Available for work</span>
+                                </div>
+                            </div>
 
-            </div>
+                            {/* Stats to be added later */}
+                            {/* <div className="absolute -top-4 -left-4 rounded-xl px-4 py-3 glass animate-float">
+                                <div className="text-2xl text-bold">0</div>
+                                <div className="text-sm text-muted-foreground">Years Exp.</div>
+                            </div> */}
+
+                        </div>
+                    </div> {/* pfp div end */}
+
+                </div> {/*Right div end */}
+
+            </div> {/* Grid container ends */}
+
+
+        </div>
+
+        {/* Scrolldown symbol div  */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-400">
+        <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary/70"> 
+        <span className="text-xs uppercase tracking-wider">Explore</span>
+        <ChevronDown className="w-6 h-6 animate-bounce"/>
+        </a>
         </div>
     </section>
   )
