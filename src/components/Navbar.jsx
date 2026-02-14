@@ -12,7 +12,7 @@ const Navbar = () => {
         {label:"Projects",href:""},
     ]
   return (
-    <header className="fixed top-0 left-0 right-0 bg-transparent py-4 z-50">
+    <header className="fixed top-0 left-0 right-0 bg-primary/20 md:bg-transparent z-50">
         <nav className="container mx-auto px-6 flex items-center justify-between">
 
             {/* Logo  */}
