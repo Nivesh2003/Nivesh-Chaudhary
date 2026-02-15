@@ -2,6 +2,7 @@ import { ChevronDown } from "lucide-react"
 import Navbar from "./components/Navbar"
 import About from "./sections/About"
 import Hero from "./sections/Hero"
+import Projects from "./sections/Projects"
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <main>
         <Hero/>
         <About/>
+        <Projects/>
       </main>
     </div>
   )

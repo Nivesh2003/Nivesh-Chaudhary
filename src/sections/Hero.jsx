@@ -1,5 +1,6 @@
 import { ChevronDown, Download, Github, Linkedin, Mail, SmileIcon } from "lucide-react"
 import Button from "../components/Button"
+import { TypeAnimation } from 'react-type-animation';
 import SkillsList from "../components/SkillsList"
 const Hero = () => {
   return (
@@ -33,7 +34,23 @@ const Hero = () => {
                 {/* LEft  */}
                 <div className="space-y-8">
                     <div className="animate-fade-in">
-                       <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary"> <span className="w-2 h-2 bg-primary/90 rounded-full animate-pulse"/>Full stack developer</span>
+                       <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary"> <span className="w-2 h-2 bg-primary/90 rounded-full animate-pulse"/><TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'Full stack development',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'Frontend development',
+        1000,
+        'Backend development',
+        1000,
+        'I love building',
+        1000
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{display: 'inline-block' }}
+      repeat={Infinity}
+    /></span>
                     </div>
 
                     {/* Headline  */}

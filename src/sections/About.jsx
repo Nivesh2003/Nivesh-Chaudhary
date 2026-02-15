@@ -1,4 +1,5 @@
 import { Target, Rocket, Code2, Clock } from "lucide-react";
+import SkillsList from "../components/SkillsList";
 
 const highlights = [
   {
@@ -82,9 +83,9 @@ const About = () => {
             ))}
           </div>
 
-
         </div>
       </div>
+      <SkillsList/>
     </section>
   )
 }

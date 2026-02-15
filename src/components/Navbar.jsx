@@ -18,7 +18,7 @@ const Navbar = () => {
         {label:"About",href:"#about"},
         {label:"Experience",href:""},
         {label:"Skills",href:""},
-        {label:"Projects",href:""},
+        {label:"Projects",href:"#projects"},
     ]
   return (
     <header className={`fixed top-0 left-0 right-0 transistion-all duration-500 ${scrolled?"glass":" bg-transparent py-1"} z-50`}>
