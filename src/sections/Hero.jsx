@@ -28,7 +28,7 @@ const Hero = () => {
 
         {/* Main content */}
         <div className="container mx-auto px-6 pt-28 pb-20 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-12 items-center p-5"> 
+            <div className="grid lg:grid-cols-2 gap-12 items-center p-3.5"> 
 
                 {/* LEft  */}
                 <div className="space-y-8">
@@ -100,13 +100,14 @@ const Hero = () => {
 
         </div>
 
-        {/* Scrolldown symbol div  */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-400">
+                {/* Scrolldown symbol div  */}
+        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 z-20 animate-fade-in animation-delay-400">
         <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary/70"> 
         <span className="text-xs uppercase tracking-wider">Explore</span>
         <ChevronDown className="w-6 h-6 animate-bounce"/>
         </a>
         </div>
+
     </section>
   )
 }

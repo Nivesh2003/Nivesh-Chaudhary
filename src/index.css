@@ -22,7 +22,7 @@
 
   --color-highlight: #ff4d5a;
 
-  --color-surface: #1c1111;         /* brighter than background */
+  --color-surface: #3b2a2a;         /* brighter than background */
 }
 
 
@@ -43,7 +43,7 @@
 
 @layer components{
     .glass{
-        background-color: color-mix(in srgb, var(--color-surface) 50%, transparent);
+        background-color: color-mix(in srgb, var(--color-surface) 40%, transparent);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
         border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);

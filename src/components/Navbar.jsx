@@ -15,7 +15,7 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll",handleScroll);
     },[])
    const navItems = [
-        {label:"About",href:"#"},
+        {label:"About",href:"#about"},
         {label:"Experience",href:""},
         {label:"Skills",href:""},
         {label:"Projects",href:""},
@@ -51,9 +51,9 @@ const Navbar = () => {
        {mobileMenuOpen && <div className="md:hidden glass-strong animate-fade-in">
             <div className='container p-6 flex flex-col gap-3'>
                 {navItems.map((item ,index)=>(
-                    <a href={item.href} key={index} className='text-lg text-muted-foreground hover:text-foreground py-2'>{item.label}</a>
+                    <a href={item.href} key={index} onClick={()=>{setmobileMenuOpen(false)}} className='text-lg text-muted-foreground hover:text-foreground py-2'>{item.label}</a>
                 ))}
-                <Button>Contact me</Button>
+                <Button onClick={()=>{setmobileMenuOpen(false)}}>Contact me</Button>
             </div>
         </div>}
     </header>
