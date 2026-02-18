@@ -11,16 +11,7 @@ const Experience = () => {
     current: false,
   },
   {
-    period: "2024 - 2025",
-    role: "Full Stack Developer (MERN Projects)",
-    company: "Personal Projects",
-    description:
-      "Built scalable MERN apking platform with secure JWT authentication and modular APIs.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "JWT", "Google OAuth"],
-    current: false,
-  },
-  {
-    period: "2022 - 2024",
+    period: "2022 - 2026",
     role: "Computer Science Student",
     company: "IIMT College of Engineering",
     description:
@@ -61,7 +52,7 @@ const Experience = () => {
 
         {/* Timeline */}
         <div className="relative">
-          <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-linear-to-b from-primary/80 via-primary/40 to-primary/20
+          <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-primary/80 via-primary/40 to-primary/20
  md:-translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]" />
 
           {/* Experience Items */}

@@ -67,7 +67,7 @@ const Hero = () => {
 
                     {/* Buttons for contact and resume */}
                     <div className="flex flex-wrap gap-3 animate-fade-in animation-delay-500">
-                        <Button size='lg'>Get in Touch <SmileIcon className="w-5 h-5"/></Button>
+                       <a href="#contact"><Button size='lg'>Get in Touch <SmileIcon className="w-5 h-5"/></Button></a> 
                         <button className="p-5 flex items-center bg-primary-foreground/70 text-primary font-semibold rounded-full text-sm hover:bg-primary-foreground/90">Download Resume  <Download size={20}/></button>
                     </div>
 

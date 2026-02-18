@@ -39,7 +39,7 @@ const Navbar = () => {
             </div>
 
 
-            <div className='hidden md:block'><Button size='sm'>Contact me</Button></div>
+            <div className='hidden md:block'><Button size='sm'><a href="#contact">Contact me</a></Button></div>
             
 
             {/* Smaller screen menu button */}
