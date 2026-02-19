@@ -49,7 +49,7 @@
         border: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
     }
 .glass-strong {
-    background-color: color-mix(in srgb, var(--color-surface) 85%, transparent);
+    background-color: color-mix(in srgb, var(--color-red-950) 80%, transparent);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border: 1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
