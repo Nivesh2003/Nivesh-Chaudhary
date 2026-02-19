@@ -68,18 +68,18 @@ const Hero = () => {
                     {/* Buttons for contact and resume */}
                     <div className="flex flex-wrap gap-3 animate-fade-in animation-delay-500">
                        <a href="#contact"><Button size='lg'>Get in Touch <SmileIcon className="w-5 h-5"/></Button></a> 
-                        <button className="p-5 flex items-center bg-primary-foreground/70 text-primary font-semibold rounded-full text-sm hover:bg-primary-foreground/90">Download Resume  <Download size={20}/></button>
+                        <a href="/Resume_Nivesh_FullStack.pdf" download><button className="p-5 flex items-center bg-primary-foreground/70 text-primary font-semibold rounded-full text-sm hover:bg-primary-foreground/90">Download Resume  <Download size={20}/></button> </a>
                     </div>
 
                     {/* Social links */}
                     <div className="flex items-center gap-4 animate-fade-in animation-delay-500 px-2">
                         <span className="text-sm text-muted-foreground">Follow me</span>
                         {[
-                            {icon:Github,href:"#"},
-                            {icon:Linkedin,href:"#"},
-                            {icon:Mail,href:"#"}
+                            {icon:Github,href:"https://github.com/Nivesh2003"},
+                            {icon:Linkedin,href:"https://www.linkedin.com/in/nivesh-chaudhary"},
+                            {icon:Mail,href:"mailto:nivesh.ch30@gmail.com"}
                         ].map((social,idx)=>(
-                            <a href={social.href} key={idx} className="rounded-full p-2 glass hover:bg-primary/10 hover:text-primary/70 transition-all duration-300">{<social.icon className="w-5 h-5"/>}</a>
+                            <a href={social.href} key={idx} target="_blank" className="rounded-full p-2 glass hover:bg-primary/10 hover:text-primary/70 transition-all duration-300">{<social.icon className="w-5 h-5"/>}</a>
                         ))}
                     </div>
 
